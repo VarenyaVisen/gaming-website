@@ -24,8 +24,8 @@ header{
     justify-content: space-between;
     padding: 10px 40px;
     z-index: 999;
-    background-color: #4b4b4b5b;
-    backdrop-filter: blur(10px);
+    /* background-color: #4b4b4b5b; */
+    /* backdrop-filter: blur(10px); */
 }
 
 .head-left{
@@ -153,4 +153,69 @@ header{
     height: 200px;
     opacity: 1;
     box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+
+.about-section{
+    width: 100%;
+    height: 100%;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.image-box{
+    width: 360px;
+    height: 510px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-section p{
+    font-size: 12px;
+}
+
+.about-section h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    font-size: 100px; 
+    max-width: 1150px;
+    text-align: center;
+    margin: 25px 0;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #4acfee, #53f8c9, #02d79a, #6070fd, #2a46ff, #0099ff, #4acfee);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+}
+
+@keyframes animate-gradient{
+    to{
+        background-position: 200%;
+    }
+}
+
+.about-section h4{
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.about-section h5{
+    margin-top: 5px;
+    color : gray;
+    max-width: 425px;
+    text-align: center;
+    line-height: 25px;
 }
