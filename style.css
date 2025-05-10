@@ -424,6 +424,12 @@ header{
     margin: 0 10px;
 }
 
+.stones-img{
+    position: absolute;
+    margin-top: 22%;
+    width: 500px;
+}
+
 /* BLUR EFFECT ANIMATION */
 
 .autoBlur{
@@ -449,7 +455,7 @@ header{
 /* TAKE FULL SCREEN ANIMATION */
 .autoTakeFull{
     animation: autoTakeFullAnimation both;
-    animation-timeline: view(70% 65%);
+    animation-timeline: view(80% 65%);
 }
 
 @keyframes autoTakeFullAnimation{
@@ -474,4 +480,77 @@ header{
         opacity: 1;
         transform: translateY(0) scale(1);
     }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 650px){
+    header{
+        padding: 0 10px;
+    }
+    .head-left button{
+        display: none;
+    }
+    .head-right a{
+        font-size: 12px;
+        padding: 0 5px;
+    }
+    .hero-info{
+        left: 5%;
+    }
+    .hero-section h1{
+        font-size: 90px;
+    }
+    .next-btn{
+        left: 25%;
+        top: 40%;
+    }
+    .about-section{
+        margin:0;
+    }
+    .about-section h1{
+        font-size: 50px;
+    }
+    .image-box{
+        width: 300px;
+        height: 500px;
+    }
+    .about-section h4, .about-section h5{
+        max-width: 350px;
+        text-align: center;
+    }
+
+    .contact-section .img1{
+        width: 150px;
+        height: 200px;
+        right: 0;
+        top: 20px;
+    }
+    .contact-section .img2{
+        top: 30px;
+        left: -40px;
+        width: 180px;
+        height: 180px;
+    }
+    .contact-section .img3{
+        left: -40px;
+        bottom: 0;
+        width: 150px;
+        height: 180px;
+    }
+    .contact-section h1{
+        font-size: 60px;
+        max-width: 300px;
+    }
+    .footer p{
+        display: none;
+    }
+    .footer ul{
+        margin-left: 70px;
+    }
+    .stones-img{
+        margin-top: 80%;
+        width: 400px;
+    }
+
+
 }
