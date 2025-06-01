@@ -25,7 +25,7 @@ header{
     padding: 10px 40px;
     z-index: 999;
     background-color: #4b4b4b5b;
-    backdrop-filter: blur(10px); 
+    /* backdrop-filter: blur(10px);  */
 }
 
 .head-left{
